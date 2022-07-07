@@ -22,9 +22,11 @@ export const Btn = styled.button`
   min-width: 150px;
   max-height: 50 px;
 
-  &:not(:last-child) {
-    margin-right: 20px;
+  &:not(last-child) {
+    margin-right: 5px;
   }
+
+  // margin-right: 20px;
 
   &:hover,
   &:focus {
