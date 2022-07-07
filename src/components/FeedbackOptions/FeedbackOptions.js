@@ -2,6 +2,7 @@ import React from 'react';
 import { BtnList, BtnItem, Btn } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+
   return (
     <>
       <BtnList>
