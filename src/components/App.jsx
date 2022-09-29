@@ -32,6 +32,8 @@ export default function App() {
   const countPositiveFeedbackPercentage = () =>
     Math.round((good / countTotalFeedback()) * 100);
 
+    const totalFeedback = countTotalFeedback()
+
   return (
     <>
       <Section title={'Please leave feedback'}>
@@ -42,12 +44,12 @@ export default function App() {
       </Section>
 
       <Section title={'Statistics'}>
-        {countTotalFeedback() > 0 ? (
+        {totalFeedback > 0 ? (
           <Statistics
             good={good}
             neutral={neutral}
             bad={bad}
-            total={countTotalFeedback()}
+            total={totalFeedback}
             positivePercentage={countPositiveFeedbackPercentage()}
           />
         ) : (
